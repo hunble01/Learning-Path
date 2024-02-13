@@ -1,0 +1,87 @@
+/* Add this CSS to your edit_profile_styles.css file */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../image/for_dashboards.jpg'); /* path to your background image */
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+h2 {
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background: linear-gradient(to right, #4CAF50, #2196F3);
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #45a049, #1e87f0);
+}
+
+
+
+.back-to-dashboard {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #667eea; /* Matching the gradient color scheme */
+    padding: 15px 30px; /* Generous padding for a button-sized clickable area */
+    border-radius: 30px; /* Fully rounded edges for a modern capsule button look */
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 500; /* A bit of font weight for better visual impact */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* A subtle shadow for a 3D lift effect */
+    margin-top: 20px; /* Some space above the button */
+    text-align: center;
+}
+
+.back-to-dashboard:hover {
+    background-color: #575fcf; /* A darker shade on hover for interactive feedback */
+    transform: translateY(-2px); /* A slight lift when hovered to indicate actionability */
+}
+
+.back-to-dashboard:active {
+    background-color: #4e54c8; /* Even darker for the active (click) state */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* A deeper shadow for the impression of being pressed */
+}

@@ -1,0 +1,101 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    color: #fff;
+    text-align: center;
+    background: rgba(6,12,34,0.95); /* Fallback for browsers that do not support gradients */
+    background: linear-gradient(135deg, #6a82fb, #fc5c7d);
+    padding: 100px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+}
+
+.actions {
+    /* This will hold our buttons */
+}
+
+.btn {
+    padding: 10px 20px;
+    color: white;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: all 0.2s ease;
+}
+
+.btn.primary {
+    background: #57b846;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+}
+
+/* Creative Animated Background Styles */
+.animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.shape {
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.2;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* You'll need to add keyframes for the float animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-100px) rotate(180deg);
+    }
+}
+
+/* Have multiple shapes for more visual appeal */
+.animated-background .shape:nth-child(2) {
+    left: initial;
+    right: -100px;
+    animation-duration: 8s; /* Vary durations to create a less uniform and more dynamic background */
+}
+
+.animated-background:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(6,12,34,0.75);
+    pointer-events: none; /* This allows clicks through the overlay */
+}

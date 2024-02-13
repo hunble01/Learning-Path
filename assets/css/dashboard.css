@@ -1,0 +1,153 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../image/for.jpeg'); /* path to your background image */
+    line-height: 1.6;
+}
+
+/* Top Navigation Bar */
+.top-nav {
+    background-color: #35424a; /* Dark slate gray */
+    color: #ffffff;
+    padding: 5px 5px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-button {
+    background-color: #e8491d; /* Vivid Red-Orange */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #f9683a; /* Softer Red-Orange */
+}
+
+/* Welcome Message */
+.dashboard-header {
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 5px;
+
+    text-align: center;
+}
+
+/* Search Form */
+form {
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 7px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+form label {
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: calc(100% - 22px); /* Full width minus padding and border */
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #5a88ca; /* Moderate Blue */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #7aa0d5; /* Soft Blue */
+}
+
+/* Learning Path */
+.learning-path {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 3px solid #5a88ca; /* Moderate Blue */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.learning-path .title {
+    font-size: 1.2em;
+    color: #35424a;
+}
+
+.learning-path p {
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+.learning-path a {
+    color: #5a88ca;
+    text-decoration: none;
+}
+
+.learning-path a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons to Redirect to Tutor and All Learning Paths */
+form[action="tutor.php"],
+form[action="learning_path.php"] {
+    text-align: center;
+    padding-bottom: 20px;
+}
+.button-link {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.right-aligned {
+    float: right;
+    margin-right: 20px; /* Adjust the margin as per your layout */
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-button {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    form {
+        width: 90%;
+        margin: 20px auto;
+    }
+}

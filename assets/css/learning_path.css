@@ -1,0 +1,122 @@
+/* main_style.css */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+
+body, html {
+    margin: 10px;
+    padding: 0;
+    height: 100%;
+    font-family: 'Nunito', sans-serif;
+    background-image: url('../image/tutor.jpg'); /* path to your background image */
+
+}
+
+.container {
+    max-width: 960px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h2, h3 {
+    color: #333; /* Dark gray text for contrast */
+    font-weight: 800;
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 2.25rem; /* Larger size for Heading */
+    text-align: center;
+    background-color: #1e90ff; /* Header background color */
+    color: #fff; /* White text for the header */
+    padding: 20px 0; /* More padding for the header */
+    margin-bottom: 30px; /* Margin to push content down */
+    border-radius: 6px;
+}
+
+input[type="text"], button {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd; /* Subtle border */
+    font-size: 1rem;
+    margin-bottom: 10px; /* Add margin to inputs/buttons for spacing */
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+button {
+    background-color: #5cb85c; /* Bootstrap's 'success' green */
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none; /* Remove default border */
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9; /* Slight opacity change for interaction feedback */
+}
+
+.card {
+    background: #fafafa; /* A slightly off-white background for cards */
+    margin-top: 1rem;
+    padding: 20px; /* More padding inside cards for space */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Even softer shadow on cards */
+    transition: box-shadow 0.3s ease-in-out;
+    border-left: 5px solid #1e90ff; /* A blue border on the left for a dash of color */
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover for interactive effect */
+}
+
+a.back-to-dashboard {
+    display: block;
+    margin-top: 2rem;
+    background-color: #1e90ff; /* Match header's background color */
+    color: #fff; /* Match header's text color */
+    text-align: center;
+    padding: 15px; /* Same padding as header for consistency */
+    text-decoration: none;
+    border-radius: 6px; /* Rounded corners to match header */
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+a.back-to-dashboard:hover {
+    background-color: #1a7ccc; /* A slightly darker blue on hover for button */
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+        margin-top: 1rem; /* Less vertical space on small screens */
+    }
+    h2 {
+        font-size: 1.5rem; /* Smaller heading on mobile */
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+}
+
+a.back-to-dashboard {
+    display: inline-block; /* Allow block-level properties like margin and padding */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background-color: #1e90ff; /* The same blue as the header */
+    color: white; /* White text */
+    text-align: center;
+    padding: 15px 30px; /* Generous padding for a button-like appearance */
+    text-decoration: none; /* Remove underline */
+    border-radius: 6px; /* Rounded corners */
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* A light shadow for a subtle "lifted" effect */
+}
+
+a.back-to-dashboard:hover {
+    background-color: #1a7ccc; /* A slightly darker blue on hover */
+}
